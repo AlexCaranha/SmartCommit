@@ -100,6 +100,7 @@ def main(repository_path: Optional[str]):
         return
 
     print(f"repository_path: {repository_path}")
+    print(f"prompt: {LLM_PROMPT}")
     git_message = get_git_diff(repository_path)
     clipboard.copy(git_message)
 

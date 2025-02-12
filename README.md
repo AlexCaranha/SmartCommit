@@ -1,5 +1,7 @@
 # SmartCommit
 
+SmartCommit is an intelligent tool designed to analyze code changes and provide clear, concise commit message suggestions. It streamlines the process of writing commit messages, ensuring that they accurately reflect the changes made in the codebase. With SmartCommit, developers can maintain a well-documented and organized project history effortlessly.
+
 ## Project Setup Steps
 
 ### 1. Clone the Repository
@@ -36,3 +38,23 @@ Install the required dependencies by running:
 pip install -r requirements.txt
 ```
 <img src="assets/install_dependencies.png" alt="Install Dependencies">
+
+### 6. Generate Executable
+Run PyInstaller to generate the executable. You can use various options, but a simple command would be:
+```prompt
+pyinstaller --onefile smart_commit.py
+```
+<img src="assets/generate_executable.png" alt="Generate Executable">
+
+### 7. Add Directory to the PATH
+Restart the Windows user session after adding the directory to the PATH.
+<img src="assets/executable_path.png" alt="Add to PATH">
+
+### 8. Check the .env File
+Verify the properties of the file, especially the address of the LLM available on your machine: **LLM_URL**
+
+### 9. Execute Anywhere
+Example:
+```prompt
+smart_commit.exe .
+```
