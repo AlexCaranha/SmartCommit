@@ -42,7 +42,7 @@ pip install -r requirements.txt
 ### 6. Generate Executable
 Run PyInstaller to generate the executable. You can use various options, but a simple command would be:
 ```prompt
-pyinstaller --onefile smart_commit.py
+pyinstaller --onefile --name SmartCommit smart_commit.py
 ```
 <img src="assets/generate_executable.png" alt="Generate Executable">
 
@@ -56,5 +56,5 @@ Verify the properties of the file, especially the address of the LLM available o
 ### 9. Execute Anywhere
 Example:
 ```prompt
-smart_commit.exe .
+SmartCommit 
 ```
