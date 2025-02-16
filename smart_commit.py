@@ -1,4 +1,3 @@
-
 import clipboard
 import os
 import sys
@@ -10,9 +9,10 @@ from rich.progress import Progress, SpinnerColumn, TextColumn
 from rich.console import Console
 from dotenv import load_dotenv
 
+current_directory = os.path.dirname(os.path.abspath(__file__))
+dotenv_path = os.path.join(current_directory, ".env")
 
-load_dotenv()
-
+load_dotenv(dotenv_path)
 
 LLM_URL: str = os.getenv("LLM_URL", "")
 LLM_PROMPT: str = os.getenv("PROMPT_LLM", "")
@@ -35,7 +35,7 @@ def verify_changes(git_changes: str) -> str:
         {
             "messages": [
                 {"role": "system", "content": LLM_PROMPT},
-                {"role": "user", "content": git_changes}
+                {"role": "user", "content": git_changes},
             ],
             "temperature": TEMPERATURE,
             "max_tokens": MAX_TOKENS,
