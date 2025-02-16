@@ -7,17 +7,12 @@ import requests
 from typing import Optional
 from rich.progress import Progress, SpinnerColumn, TextColumn
 from rich.console import Console
-from dotenv import load_dotenv
 
-current_directory = os.path.dirname(os.path.abspath(__file__))
-dotenv_path = os.path.join(current_directory, ".env")
 
-load_dotenv(dotenv_path)
-
-LLM_URL: str = os.getenv("LLM_URL", "")
-LLM_PROMPT: str = os.getenv("PROMPT_LLM", "")
-TEMPERATURE: float = float(os.getenv("TEMPERATURE", 0.7))
-MAX_TOKENS: int = int(os.getenv("MAX_TOKENS", -1))
+LLM_URL: str = "http://localhost:1234/v1/chat/completions"
+LLM_PROMPT: str = "As a commit message expert, analyze the changes in the source code and suggest a commit message that is clear, direct, concise, and in English. Highlight instances of new or deleted files. Provide only the commit message without additional explanations or information. Keep the message brief."
+TEMPERATURE: float = 0.7
+MAX_TOKENS: int = -1
 
 
 def remove_double_spaces(text) -> str:
