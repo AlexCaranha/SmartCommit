@@ -51,10 +51,10 @@ Adicione o diretório `dist/` ao PATH para executar `SmartCommit` de qualquer lu
 
 <img src="assets/executable_path.png" alt="Add to PATH">
 
-### 7️⃣ Configure o arquivo `.env`
-Crie um arquivo `.env` na raiz do projeto e adicione a URL do modelo de linguagem, o prompt e os demais parâmetros:  
+### 7️⃣ Configure as propriedades
+Verifique ou modifique os parâmetros no início do arquivo smart_commit:  
 
-```env
+```bash
 TEMPERATURE=0.7
 MAX_TOKENS=-1
 LLM_URL="http://localhost:1234/v1/chat/completions"

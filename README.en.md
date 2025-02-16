@@ -51,10 +51,10 @@ Add the dist/ directory to the system PATH to run SmartCommit from anywhere.
 
 <img src="assets/executable_path.png" alt="Add to PATH">
 
-### 7️⃣ Configure o arquivo `.env`
-Create a .env file in the project root and add the language model URL, prompt, and other parameters:  
+### 7️⃣ Configure the properties
+Verify or update the parameters at the beginning of the smart_commit.py:  
 
-```env
+```bash
 TEMPERATURE=0.7
 MAX_TOKENS=-1
 LLM_URL="http://localhost:1234/v1/chat/completions"
