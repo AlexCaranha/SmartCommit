@@ -5,7 +5,6 @@ SmartCommit é uma ferramenta inteligente que analisa mudanças no código e sug
 ## 📌 Recursos
 
 ✔️ Geração automática de mensagens de commit;  
-✔️ Suporte para múltiplos repositórios locais;  
 ✔️ Integração com modelos de linguagem (LLM);  
 ✔️ Configuração fácil e rápida.  
 
