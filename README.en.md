@@ -5,7 +5,6 @@ SmartCommit is an intelligent tool that analyzes code changes and suggests clear
 ## 📌 Features
 
 ✔️ Automatic commit message generation;  
-✔️ Support for multiple local repositories;  
 ✔️ Integration with language models (LLM);  
 ✔️ Easy and quick setup.  
 
@@ -15,6 +14,7 @@ SmartCommit is an intelligent tool that analyzes code changes and suggests clear
 ```bash
 git clone https://github.com/AlexCaranha/SmartCommit.git
 cd SmartCommit
+```
 
 ### 2️⃣ Verify Python installation
 ```bash
