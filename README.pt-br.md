@@ -73,6 +73,9 @@ SmartCommit .
 SmartCommit c:\MyLocalRepository
 ```
 
+#### Demostração:  
+<img src="assets/LM_Studio_dCOr9IK7Th.gif" alt="Demo">
+
 ---
 
 ## ❓ FAQ
