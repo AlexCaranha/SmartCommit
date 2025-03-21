@@ -1,4 +1,4 @@
-# SmartCommit 🚀
+# SmartCommit
 
 SmartCommit is an intelligent tool that analyzes code changes and suggests clear and concise commit messages. Its goal is to automate the writing of informative commits, helping developers maintain an organized project history.
 
