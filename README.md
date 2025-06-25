@@ -1,4 +1,4 @@
-# SmartCommit 🚀
+# SmartCommit
 
 Bem-vindo ao SmartCommit! Escolha seu idioma:
 
